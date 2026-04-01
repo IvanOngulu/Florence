@@ -7,29 +7,37 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, Instagram, Mail, Twitter, Phone, MapPin } from "lucide-react";
 
+import TimberHouse from "./assets/TimberHouse.jpeg";
+import Volumes from "./assets/volumes.jpeg";
+import Percussion from "./assets/percussion.jpeg";
+import Urban from "./assets/urban.jpeg";
+import MusicTherapy1 from "./assets/musicTherapy1.jpeg";
+import MusicTherapy2 from "./assets/musicTherapy2.jpeg";
+import Keyboard from "./assets/keyboard.jpeg";
+
 const projects = [
   {
     title: "Timber House",
     category: "Gallery",
-    image: "./src/assets/TimberHouse.jpeg",
+    image: TimberHouse,
     description: "A study of acoustic resonance and visual harmony."
   },
   {
     title: "Passion Volumes",
     category: "Gallery",
-    image: "./src/assets/volumes.jpeg",
+    image: Volumes,
     description: "Capturing the raw energy of rhythmic expression."
   },
   {
     title: "Percussions",
     category: "Gallery",
-    image: "./src/assets/percussion.jpeg",
+    image: Percussion,
     description: "The heartbeat of visual storytelling."
   },
   {
     title: "Urban Structures",
     category: "Gallery",
-    image: "./src/assets/urban.jpeg",
+    image: Urban,
     description: "Finding rhythm in the architectural landscape."
   }
 ];
@@ -43,8 +51,8 @@ const services = [
       "Showcasing the therapeutic side of music"
     ],
     images: [
-      "./src/assets/musicTherapy1.jpeg",
-      "./src/assets/musicTherapy2.jpeg"
+      MusicTherapy1,
+      MusicTherapy2
     ]
   }
 ];
@@ -66,7 +74,7 @@ export default function App() {
       <section className="relative h-screen w-full overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="./src/assets/keyboard.jpeg"
+            src={Keyboard}
             alt="Florence at the keyboard"
             className="h-full w-full object-cover grayscale-[20%]"
             referrerPolicy="no-referrer"
