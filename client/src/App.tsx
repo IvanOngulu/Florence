@@ -5,7 +5,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { ArrowRight, Instagram, Mail, Twitter, Phone, MapPin } from "lucide-react";
+import { ArrowRight, Instagram, Mail, X, Phone, MapPin } from "lucide-react";
 
 import TimberHouse from "./assets/TimberHouse.jpeg";
 import Volumes from "./assets/volumes.jpeg";
@@ -310,7 +310,7 @@ export default function App() {
                 <Instagram size={20} />
               </a>
               <a href="#" className="text-zinc-400 hover:text-zinc-900 transition-colors">
-                <Twitter size={20} />
+                <X size={20} />
               </a>
               <a href="#" className="text-zinc-400 hover:text-zinc-900 transition-colors">
                 <Mail size={20} />
